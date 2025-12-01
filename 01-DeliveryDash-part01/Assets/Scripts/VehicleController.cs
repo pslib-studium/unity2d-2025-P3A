@@ -36,7 +36,7 @@ public class VehicleController : MonoBehaviour
         {
             steer = -regularSteer;
         }
-        Debug.Log("Move: " + move + " Steer: " + steer);
+        //Debug.Log("Move: " + move + " Steer: " + steer);
         transform.Translate(0, move * currentSpeed * Time.deltaTime, 0);
         transform.Rotate(0, 0, steer * steerSpeed * Time.deltaTime);
     }
